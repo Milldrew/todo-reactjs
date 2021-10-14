@@ -1,7 +1,11 @@
-
+import "./App.css";
+import React from "react";
+import Login from "./components/login";
 function App() {
   return (
-    <h1>React Ready</h1> 
+    <React.Fragment>
+      <Login />
+    </React.Fragment>
   );
 }
 
