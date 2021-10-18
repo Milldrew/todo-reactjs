@@ -1,4 +1,4 @@
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -11,10 +11,10 @@ import Grid from "@material-ui/core/Grid";
 
 import React from "react";
 
-export default function Login() {
+export default function SignUp() {
   const paperStyle = {
     padding: 20,
-    height: "70vh",
+    height: "90vh",
     width: 280,
     margin: "20px auto",
   };
@@ -30,11 +30,17 @@ export default function Login() {
             <Avatar style={avatarStyle}>
               <Lock />
             </Avatar>
-            <h2>Sign In</h2>
+            <h2>Sign Up</h2>
           </Grid>
           <TextField label="Enter Username" fullWidth required />
           <TextField
-            label="Enter Usernamessword"
+            label="Enter Password"
+            type="password"
+            fullWidth
+            required
+          />
+          <TextField
+            label="Confirm Password"
             type="password"
             fullWidth
             required
@@ -50,14 +56,14 @@ export default function Login() {
             variant="contained"
             fullWidth
           >
-            Sign in
+            sign up
           </Button>
           <Typography>
-            <Link href="#">Forgot password ?</Link>
+            <Link to="forgot-password">Forgot password ?</Link>
           </Typography>
           <Typography>
             Do you have an account?
-            <Link href="#">Sign up ?</Link>
+            <Link to="/sign-in">Sign in ?</Link>
           </Typography>
         </Paper>
       </Grid>
