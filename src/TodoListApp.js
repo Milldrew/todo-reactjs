@@ -1,13 +1,20 @@
 import Grid from "@material-ui/core/Grid";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
+import "./TodoListApp.css";
 import React from "react";
-import Header from "./components/Header";
-import TodoListsContainer from "./components/TodoListsContainer";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
-import SignInOrSignUp from "./components/SignInOrSignUp";
-function App() {
+import Header from "./todo_list_components/Header";
+import TodoListsContainer from "./todo_list_components/TodoListsContainer";
+import SignIn from "./authentication_components/SignIn";
+import SignUp from "./authentication_components/SignUp";
+import SignInOrSignUp from "./authentication_components/SignInOrSignUp";
+
+/**
+ * @description This component is the most senior parent component of the todo list components and handles the routing of a TodoListApp
+ * @returns Some react-router-dom.js logic as well as the appropriate subcomponents.
+ * @props This component has no props
+ *
+ */
+function TodoListApp() {
   return (
     <React.Fragment>
       <Router>
@@ -19,7 +26,7 @@ function App() {
             <SignUp />
           </Route>
           <Route path="/todo-lists">
-            <Grid justifyContent="space-between">
+            <Grid>
               <Grid align="center">
                 <Header />
                 <TodoListsContainer />
@@ -35,4 +42,4 @@ function App() {
   );
 }
 
-export default App;
+export default TodoListApp;

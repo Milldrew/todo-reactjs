@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-//import Link from "@material-ui/core/Link";
-import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -32,20 +30,20 @@ export default function SignIn() {
             variant="contained"
             fullWidth
             component={Link}
-            to="/sign-up"
+            to="/sign-in"
           >
-            Sign up
+            Sign in
           </Button>
           <Button
             style={btnStyle}
             type="submit"
-            color="primary"
+            color="secondary"
             variant="contained"
             fullWidth
             component={Link}
-            to="/sign-in"
+            to="/sign-up"
           >
-            Sign in
+            Sign up
           </Button>
         </Paper>
       </Grid>

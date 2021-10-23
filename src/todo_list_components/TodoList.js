@@ -8,10 +8,11 @@ export default function TodoList() {
   return (
     <React.Fragment>
       <Card style={{ width: 400 }}>
-        <Typography component="div" variant="h5">
+        <Typography component="div" variant="h3">
           TodoList Name
         </Typography>
         <List>
+          <Todo defaultChecked={false} checked name="FooBar" />
           <Todo defaultChecked={false} checked name="FooBar" />
         </List>
       </Card>

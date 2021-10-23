@@ -1,3 +1,9 @@
+Current things I need to do:
+Breakdown code into modular components. Document each component.
+After the components are broken down into smaller modules
+Create Color Themes
+After the color themes are in place work in spacing position and
+responsive design.
 Mental-Model:
 
 Create the main component. The main component consists of two states. The todolists

@@ -34,13 +34,14 @@ export default function Todo(props) {
       <ListItem>
         <ListItemIcon>
           <Checkbox
+            sx={{ "& .MuiSvgIcon-root": { fontSize: 50 } }}
             key={Math.random()}
             onClick={toggleCheck}
             edge="start"
             checked={state.status}
           />
         </ListItemIcon>
-        <span style={{ width: 300 }}>{state.name}</span>
+        <span style={{ width: 300, fontSize: 40 }}>{state.name}</span>
         <IconButton
           component={Button}
           aria-controls="demo-positioned-menu"

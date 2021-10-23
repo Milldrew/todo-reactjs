@@ -1,41 +1,13 @@
+import AddEditTodoLists from "./AddEditTodoLists.js";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import * as React from "react";
 import TodoList from "./TodoList.js";
 
 export default function TodoLists(props) {
-  const btnStyle = { margin: "30px 0" };
-  const makeSpace = { margin: "30px" };
   return (
     <React.Fragment>
-      <Grid item xs={12}>
-        <div style={makeSpace}>take up space</div>
-      </Grid>
-      <Grid item xs={6}>
-        <Button
-          color="primary"
-          fullWidth
-          style={btnStyle}
-          type="submit"
-          variant="contained"
-        >
-          add
-        </Button>
-      </Grid>
-      <Grid item xs={6}>
-        <Button
-          color="secondary"
-          fullWidth
-          style={btnStyle}
-          type="submit"
-          variant="contained"
-        >
-          Edit
-        </Button>
-      </Grid>
-      <Grid item xs={12}>
-        <h1> Todo Lists </h1>
-      </Grid>
+      <Grid item xs={12}></Grid>
       <Grid item xs={12} md={6} xl={3}>
         <TodoList />
       </Grid>
