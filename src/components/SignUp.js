@@ -14,7 +14,7 @@ import React from "react";
 export default function SignUp() {
   const paperStyle = {
     padding: 20,
-    height: "90vh",
+    height: null,
     width: 280,
     margin: "20px auto",
   };

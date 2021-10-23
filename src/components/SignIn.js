@@ -1,3 +1,4 @@
+import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 //import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
@@ -8,14 +9,21 @@ import TextField from "@material-ui/core/TextField";
 import Lock from "@material-ui/icons/Lock";
 import Avatar from "@material-ui/core/Avatar";
 import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-
 import React from "react";
-
+/**
+ * @description:
+ * This is a large component it is an entire sign in page
+ * It has no child custom child components
+ * It should be broken down into two child components.
+ * This Component should implement the Grid layout.
+ * Between the grid tags there should be sub components
+ * such as a subcomponent for forms and a subcomponent for
+ * Future Subcompnents: SINGINFORM SIGNIN AVATAR SIGNIN TEXT
+ */
 export default function SignIn() {
   const paperStyle = {
     padding: 20,
-    height: "70vh",
+    height: "null",
     width: 280,
     margin: "20px auto",
   };

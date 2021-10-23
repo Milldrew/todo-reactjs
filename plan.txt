@@ -1,0 +1,24 @@
+Mental-Model:
+
+Create the main component. The main component consists of two states. The todolists
+state and the todolist state.
+
+The todo-lists state is a grid of all the todo lists with the option to create a new
+todo-list or edit the existing todo-lists.
+
+The todolist state shows the todos of a todolist and has the option to create more todos
+or to edit todos.
+
+Steps:
+Create a component that is positioned in the center.
+Create a Todolists data grid which lists all of the names of the grid
+Create two buttons one for editing and one for creating a new todo.
+Create a modal that allows you to enter the name of your todo list
+When the todo list name is entered:
+  Add an entry to the todolists grid and create a new todolist
+  Use the name of the todolist as a key to store the todo lists in an Object in memory
+When to todolist name change the route and render a component that is retrieved from
+the object that contains the todlists.
+
+
+
