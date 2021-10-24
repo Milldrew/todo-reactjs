@@ -26,6 +26,7 @@ export default function SignUp() {
     <React.Fragment>
       <Grid>
         <Paper style={paperStyle}>
+          signUpHeader_30_c5
           <Grid align="center">
             <Avatar style={avatarStyle}>
               <Lock />
