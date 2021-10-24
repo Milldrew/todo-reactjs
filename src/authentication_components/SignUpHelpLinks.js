@@ -1,11 +1,7 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import { Fragment } from "react";
-/**
- * @description this component is for Forgot Password and SignUp links
- * @params none
- */
-export default function SignInHelpLinks() {
+export default function SignUpHelpLinks() {
   return (
     <Fragment>
       <Typography>
@@ -13,7 +9,7 @@ export default function SignInHelpLinks() {
       </Typography>
       <Typography>
         Do you have an account?
-        <Link to="/sign-up">Sign up ?</Link>
+        <Link to="/sign-in">Sign in ?</Link>
       </Typography>
     </Fragment>
   );

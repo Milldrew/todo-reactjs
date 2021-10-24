@@ -7,10 +7,9 @@ import Lock from "@material-ui/icons/Lock";
  * @props none
  */
 export default function SignInHeader() {
-  const avatarStyle = { backgroundColor: "#3f51b5" };
   return (
     <Grid align="center">
-      <Avatar style={avatarStyle}>
+      <Avatar>
         <Lock />
       </Avatar>
       <h2>Sign In</h2>
