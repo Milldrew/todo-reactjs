@@ -1,7 +1,6 @@
 import Grid from "@material-ui/core/Grid";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
-import Header from "./todo_list_components/Header";
 import TodoListsContainer from "./todo_list_components/TodoListsContainer";
 import SignIn from "./authentication_components/SignIn";
 import SignUp from "./authentication_components/SignUp";
@@ -27,7 +26,6 @@ function TodoListApp() {
           <Route path="/todo-lists">
             <Grid>
               <Grid align="center">
-                <Header />
                 <TodoListsContainer />
               </Grid>
             </Grid>

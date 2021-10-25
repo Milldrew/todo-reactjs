@@ -1,21 +1,36 @@
+import Todo from "./Todo";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import List from "@mui/material/List";
-import Todo from "./Todo";
 import Typography from "@mui/material/Typography";
 
-export default function TodoList() {
+export default function TodoList(props) {
+  console.log("From TodoList.js", props);
+  const todos = props.todos.map((todo) => {
+    return (
+      <List>
+        <Todo checked={todo.checked} name={todo.name} />
+      </List>
+    );
+  });
   return (
     <React.Fragment>
       <Card style={{ width: 400 }}>
         <Typography component="div" variant="h3">
-          TodoList Name
+          {props.name}
         </Typography>
-        <List>
-          <Todo defaultChecked={false} checked name="FooBar" />
-          <Todo defaultChecked={false} checked name="FooBar" />
-        </List>
+        {todos}
       </Card>
     </React.Fragment>
   );
 }
+
+/*
+  const todos = props.myTodoList.todos.map((todo) => {
+    return (
+      <List>
+        <Todo defaultChecked={todo.checked} checked name={props.name} />
+      </List>
+    );
+  });
+  */
