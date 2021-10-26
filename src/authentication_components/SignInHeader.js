@@ -1,3 +1,4 @@
+import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Avatar from "@mui/material/Avatar";
 import Lock from "@material-ui/icons/Lock";
@@ -12,7 +13,9 @@ export default function SignInHeader() {
       <Avatar>
         <Lock />
       </Avatar>
-      <h2>Sign In</h2>
+      <Typography variant="h4">
+        <h2>Sign In</h2>
+      </Typography>
     </Grid>
   );
 }

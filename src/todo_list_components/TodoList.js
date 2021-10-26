@@ -15,7 +15,11 @@ export default function TodoList(props) {
   });
   return (
     <React.Fragment>
-      <Card style={{ width: 400 }}>
+      <Card
+        variant="outlined"
+        style={{ width: 400 }}
+        sx={{ bgcolor: "primary.light", boxShadow: 5 }}
+      >
         <Typography component="div" variant="h3">
           {props.name}
         </Typography>

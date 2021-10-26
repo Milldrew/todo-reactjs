@@ -1,3 +1,10 @@
+COLOR PALETTE: https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=ff9800&secondary.color=FF7043
+
+Sucess Pallet: https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=76FF03&secondary.color=76FF03
+
+error pallet
+https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=B71C1C&secondary.color=B71C1C
+
 Current things I need to do:
 Breakdown code into modular components. Document each component.
 After the components are broken down into smaller modules

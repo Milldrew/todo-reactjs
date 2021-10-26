@@ -1,6 +1,9 @@
+import Typography from "@mui/material/Typography";
 import { useState } from "react";
 export default function TodoText(props) {
   return (
-    <span style={{ width: 300, fontSize: 40 }}>{props.name || "name"}</span>
+    <Typography varaint="div">
+      <div style={{ width: "250", fontSize: 40 }}>{props.name || "name"}</div>
+    </Typography>
   );
 }

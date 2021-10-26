@@ -1,3 +1,4 @@
+import mainTheme from "../theme";
 import SignInHelpLinks from "./SignInHelpLinks";
 import SignInForm from "./SignInForm";
 import SignInHeader from "./SignInHeader";
@@ -11,6 +12,7 @@ import React from "react";
  */
 export default function SignIn() {
   const paperStyle = {
+    backgroundColor: mainTheme.palette.primary.light,
     padding: 20,
     height: "null",
     width: 280,

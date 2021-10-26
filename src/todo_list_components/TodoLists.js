@@ -1,3 +1,4 @@
+import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import * as React from "react";
 import TodoList from "./TodoList.js";
@@ -8,7 +9,7 @@ export default function TodoLists(props) {
   const todoLists = props.todoLists.map((todoList) => {
     console.log("from TodoLists map", todoList);
     return (
-      <Grid item xs={12} md={6} xl={3}>
+      <Grid item xs={12} lg={6} xl={3}>
         <TodoList name={todoList.name} todos={todoList.todos} />
       </Grid>
     );

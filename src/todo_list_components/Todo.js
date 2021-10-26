@@ -7,7 +7,7 @@ import * as React from "react";
 export default function Todo(props) {
   return (
     <React.Fragment>
-      <ListItem>
+      <ListItem alignItems="center">
         <TodoCheckbox checked={props.checked} />
         <TodoText name={props.name} />
         <TodoMenuButton />

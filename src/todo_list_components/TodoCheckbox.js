@@ -6,7 +6,11 @@ export default function TodoCheckbox(props) {
   return (
     <ListItemIcon>
       <Checkbox
-        sx={{ "& .MuiSvgIcon-root": { fontSize: 50 } }}
+        color="success"
+        sx={{
+          "& .MuiSvgIcon-root": { fontSize: 50 },
+          color: "sucess.main",
+        }}
         key={Math.random()}
         onClick={toggleCheck}
         edge="start"

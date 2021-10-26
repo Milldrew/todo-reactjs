@@ -1,3 +1,4 @@
+import Paper from "@mui/material/Paper";
 import Grid from "@material-ui/core/Grid";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
@@ -26,7 +27,17 @@ function TodoListApp() {
           <Route path="/todo-lists">
             <Grid>
               <Grid align="center">
-                <TodoListsContainer />
+                <Paper
+                  sx={{
+                    bgcolor: "secondary.light",
+                    mx: 10,
+                    my: 30,
+                    py: 30,
+                    width: null,
+                  }}
+                >
+                  <TodoListsContainer />
+                </Paper>
               </Grid>
             </Grid>
           </Route>

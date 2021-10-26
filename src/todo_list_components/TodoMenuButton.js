@@ -5,8 +5,8 @@ import { Fragment } from "react";
 export default function TodoMenuButton() {
   return (
     <Fragment>
-      <IconButton component={Button}>
-        <MoreVertIcon />
+      <IconButton edge="end" component={Button} size="large">
+        <MoreVertIcon size="large" sx={{ fontSize: 50 }} />
       </IconButton>
     </Fragment>
   );
