@@ -1,0 +1,37 @@
+COLOR PALETTE: https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=ff9800&secondary.color=FF7043
+
+Sucess Pallet: https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=76FF03&secondary.color=76FF03
+
+error pallet
+https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=B71C1C&secondary.color=B71C1C
+
+Current things I need to do:
+Breakdown code into modular components. Document each component.
+After the components are broken down into smaller modules
+Create Color Themes
+After the color themes are in place work in spacing position and
+responsive design.
+Mental-Model:
+
+Create the main component. The main component consists of two states. The todolists
+state and the todolist state.
+
+The todo-lists state is a grid of all the todo lists with the option to create a new
+todo-list or edit the existing todo-lists.
+
+The todolist state shows the todos of a todolist and has the option to create more todos
+or to edit todos.
+
+Steps:
+Create a component that is positioned in the center.
+Create a Todolists data grid which lists all of the names of the grid
+Create two buttons one for editing and one for creating a new todo.
+Create a modal that allows you to enter the name of your todo list
+When the todo list name is entered:
+  Add an entry to the todolists grid and create a new todolist
+  Use the name of the todolist as a key to store the todo lists in an Object in memory
+When to todolist name change the route and render a component that is retrieved from
+the object that contains the todlists.
+
+
+
