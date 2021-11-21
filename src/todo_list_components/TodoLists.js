@@ -1,8 +1,6 @@
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import * as React from "react";
 import TodoList from "./TodoList.js";
-import Todo from "./Todo.js";
 
 export default function TodoLists(props) {
   console.log(props.todoLists[0].todos);
