@@ -1,5 +1,5 @@
 {
-  "name": "login",
+  "name": "todo-lists",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
