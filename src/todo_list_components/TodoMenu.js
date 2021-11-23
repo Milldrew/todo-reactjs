@@ -9,6 +9,7 @@ import { useState } from "react";
  * @reference https://mui.com/components/menus/
  */
 export default function TodoMenu(props) {
+  const [hiddenValue, setHiddenValue] = useState();
   function doneClicked() {
     console.log(props.isDone);
     props.setIsDone(!props.isDone);
@@ -16,9 +17,13 @@ export default function TodoMenu(props) {
   function editClicked() {
     props.setIsEditing(true);
   }
-  function deleteTodo() {
-    console.log(props.setTodoName);
-    props.setTodoName("");
+  function hideTodo() {
+    if (props.todoName !== "") {
+      setHiddenValue(props.todoName);
+      props.setTodoName("");
+    } else {
+      props.setTodoName(hiddenValue);
+    }
   }
   const divStyle = { width: "20" };
   return (
@@ -40,9 +45,9 @@ export default function TodoMenu(props) {
           ✍️
         </div>
       </MenuItem>
-      <MenuItem onClick={deleteTodo}>
+      <MenuItem onClick={hideTodo}>
         <div id="delete" style={divStyle}>
-          🗑
+          👁
         </div>
       </MenuItem>
     </Menu>

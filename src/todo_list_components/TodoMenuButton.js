@@ -44,6 +44,7 @@ export default function TodoMenuButton(props) {
         isOpen={open}
         isDone={props.isDone}
         setTodoName={props.setTodoName}
+        todoName={props.todoName}
         setIsEditing={props.setIsEditing}
         setIsDone={props.setIsDone}
       />

@@ -32,6 +32,7 @@ export default function Todo(props) {
           setIsDone={setIsDone}
           setIsEditing={setIsEditing}
           setTodoName={setTodoName}
+          todoName={todoName}
         />
       </ListItem>
     </React.Fragment>
