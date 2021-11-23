@@ -8,6 +8,7 @@ import mainTheme from "../theme";
 import { ThemeProvider } from "@mui/material/styles";
 export default function SignIn() {
   const paperStyle = {
+    backgroundColor: mainTheme.palette.primary.light,
     padding: 20,
     height: "null",
     width: 280,
@@ -15,10 +16,12 @@ export default function SignIn() {
   };
 
   const signInStyle = {
+    color: "rgba(0, 0, 0, 0.87)",
     margin: "8px 0",
     backgroundColor: mainTheme.palette.primary.main,
   };
   const signUpStyle = {
+    color: "rgba(0, 0, 0, 0.87)",
     margin: "8px 0",
     backgroundColor: mainTheme.palette.secondary.main,
   };

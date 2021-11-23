@@ -1,5 +1,6 @@
+import TodoCharacterCounter from "./TodoCharacterCounter";
 import Input from "@mui/material/Input";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 
@@ -9,8 +10,21 @@ import Typography from "@mui/material/Typography";
  *
  */
 export default function TodoTextField(props) {
-  const [characterCountDown, setChracterCountDown] = useState();
+  const MAX_CHARS = 10;
+  const [characterCountDown, setCharacterCountDown] = useState(MAX_CHARS);
+  function handleOnChange(e) {
+    let numberOfChars = e.target.value.length;
+    if (numberOfChars > MAX_CHARS) e.preventDefault();
+    setCharacterCountDown(MAX_CHARS - numberOfChars);
+  }
   function handleEnterKey(e) {
+    if (
+      characterCountDown === 0 &&
+      e.code !== "Enter" &&
+      e.code !== "Backspace"
+    )
+      e.preventDefault();
+
     e.stopPropagation();
     if (e.code === "Enter") {
       props.setTodoName(e.target.value);
@@ -21,10 +35,18 @@ export default function TodoTextField(props) {
     window.document.getElementById("text-field").focus();
   });
   return (
-    <Typography varaint="div">
-      <div style={{ width: "250", fontSize: 40 }}>
-        <TextField id="text-field" autoFocus onKeyDown={handleEnterKey} />
-      </div>
-    </Typography>
+    <Fragment>
+      <Typography varaint="div">
+        <div style={{ width: "250", fontSize: 40 }}>
+          <TextField
+            id="text-field"
+            autoFocus
+            onChange={handleOnChange}
+            onKeyDown={handleEnterKey}
+          />
+        </div>
+      </Typography>
+      <TodoCharacterCounter characterCountDown={characterCountDown} />
+    </Fragment>
   );
 }

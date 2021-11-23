@@ -14,8 +14,11 @@ function todoFactory(checked, name) {
     "Clean",
   ];
   return [1, 2, 3, 4, 5].map(() => {
-    let name = todoNames[Math.floor(Math.random() * 7)];
-    let checked = Math.floor(Math.random() * 2) === 1;
+    let name = "";
+
+    //todoNames[Math.floor(Math.random() * 7)];
+    let checked = false;
+    /*(Math.floor(Math.random() * 2) === 1;*/
     return {
       name,
       checked,
@@ -26,10 +29,11 @@ function todoFactory(checked, name) {
 function todoListFactory() {
   const types = ["daily", "once", "weekly", "monthly"];
   const todoListNames = ["Weekend", "Daily", "Morning", "Afternoon"];
-  return [1, 2, 3, 4].map(() => {
+  return [1].map(() => {
     let todos = todoFactory();
     const randomName = Math.floor(Math.random() * 4);
-    let name = todoListNames[randomName];
+    let name = "✍🏼";
+    // todoListNames[randomName];
     let type = types[Math.floor(Math.random() * types.length)];
     return {
       name,
